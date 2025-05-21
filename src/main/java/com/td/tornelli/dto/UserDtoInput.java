@@ -1,16 +1,15 @@
-package com.td.tornelli.model;
+package com.td.tornelli.dto;
 
+import com.td.tornelli.model.UserRuolo;
+import com.td.tornelli.model.UserStato;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
-public class User {
-
+public class UserDtoInput {
     String id_utente;
 
     @NotNull(message = "Il campo nome è obbligatorio")
@@ -26,8 +25,10 @@ public class User {
     @NotNull(message = "Il campo telefono è obbligatorio")
     int telefono;
 
+    @NotNull(message = "Il campo ruolo è obbligatorio")
     UserRuolo ruolo;
 
+    @NotNull(message = "Il campo azienda è obbligatorio")
     String azienda;
 
     UserStato stato;

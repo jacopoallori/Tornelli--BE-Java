@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nome": "Mario",
+    "cognome": "Rossi",
+    "email": "mario.rossi@example.com",
+    "badgeId": "ABC12345",
+    "ruolo": "DIPENDENTE",
+    "attivo": true
+  },
+  {
+    "id": 2,
+    "nome": "Lucia",
+    "cognome": "Bianchi",
+    "email": "lucia.bianchi@example.com",
+    "badgeId": "XYZ67890",
+    "ruolo": "OSPITE",
+    "attivo": false
+  }
+]
